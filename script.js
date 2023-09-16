@@ -1,3 +1,6 @@
+
+/* Botão para ligar e desligar o fundo branco */
+
 function togglemode() {
   const html = document.documentElement
    if (html.classList.contains("light")) {
@@ -8,11 +11,11 @@ function togglemode() {
 
   const img = document.querySelector("#profile img")
   
-  if (html.classList.contains("light")) {
+  /* Troca de foto de perfil */
 
+  if (html.classList.contains("light")) {
   img.setAttribute("src", "./assets/avatar-light.png")
   }
-  
   else {
    img.setAttribute('src', 'assets/avatar gustavo.png')
   }
