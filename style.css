@@ -1,8 +1,11 @@
+/* Caixas do site */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
+/* Tags para Coloração do fundo branco */
 :root {
   --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
@@ -12,6 +15,7 @@
     --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
+/* Tags para coloração do fundo escuro */
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
@@ -27,8 +31,7 @@
 }
 
 
-
-
+/* background */
 body {
   /*
 background-image: url(./assets/bg-mobile.jpg);
@@ -37,69 +40,76 @@ background-position: top center;
 background-size: cover ;
 /*background: color image repeat repeat position/size */
 background: var(--bg-url) no-repeat top center/cover;
-
 height: 100vh;
 
 
 }
+
+/* Fonte da letra */
 body * {
-  font-family: "inter"; sans-serif;
+  font-family: "inter";
   color: var(--text-color)
 }
+
+/* Caixas de cada item*/
 #container {
   max-width: 588px;
-  width: 100%;
-  
+  width: 100%; 
   width: 360px;
   margin: 56px auto 0px;
   padding: 0 24px;
 
 }
+
+/* Localização da foto */
 #profile {
   text-align: center;
   padding: 24px;
 }
+
+/* Tamanho da foto */
 #profile img { 
   width: 112px
 }
 
+/* Tamanho do meu nick */
 #profile p {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
 }
 
-/* switch */
+/* Poisção do botão de troca de fundo */
 #switch {
   position: relative ;
   width: 64px;
   margin: 4px auto;
-  
 }
-#switch button {
 
+/* Design do botão de troca de fundo */ 
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
-
   position: absolute;
   right: 0;
   z-index: 1;
   transform: translateY(-50%);
   top: 50%;
-
-
   animation: slide-back 0.4s ;
-
 }
+
+/* Detalhe ao passar o mouse em cima do botão de troca de fundo */
 #switch button:hover {
   outline: 8px solid var( --highlight-color)
 }
 .light #switch button {
   animation: slide-in 0.4s forwards;
 }
+
+/* Design do botão de troca de informações */
 #switch span {
   display: block;
   width: 64px;
@@ -111,6 +121,7 @@ body * {
    border-radius: 9999px;
 }
 
+/* Organização da lista */
 ul {
   list-style: none;
   display: flex;
@@ -118,37 +129,37 @@ ul {
   gap: 16px;
   padding: 24px 0px;
 }
-  
+
+/* Posicionamento da lista */
 ul li a{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 52px;
-
   padding: 16px 24px;
-
   background: var(--surface-color);
   border: 1px solid var(--stroker-color);
   border-radius: 8px;
-
   backdrop-filter: blur(4px);
   text-decoration: none;
   font-weight: 500;
   transition: background 0.2s;
 }
 
-
+/* Estilização dos icons */
 ul li a:hover {
 background: var(--surface-color-hover);
 border: 1px solid var(var(--surface-color-hover));
 }
 
+/* Caixas dos icons */
 #social-links {
   display: flex;
   padding: 24px 0;
   font-size: 24px;
 }
 
+/* Separação e estilização dos icons */
 #social-links a{
   display: flex;
   align-items: center;
@@ -157,6 +168,7 @@ border: 1px solid var(var(--surface-color-hover));
   transition: background 0.2s;
  border-radius: 50%;
 }
+
 #social-links a:hover{
 
   background: var(--highlight-color);
@@ -164,6 +176,7 @@ border: 1px solid var(var(--surface-color-hover));
  
 }
 
+/* Assinatura a baixo */
 footer {
 
   padding: 24px;
@@ -171,6 +184,7 @@ footer {
   font-size: 14px;
 }
 
+/* Ajustamento para diversas resoluções */
 @media (min-widht: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
@@ -180,18 +194,16 @@ footer {
   } 
 }
 
+/* Criação de animação no botão de troca de fundo */
 @keyframes slide-in {
-
   from {
 
     left: 50%;
-  }
-  
+  } 
   to {
     left: 0;
   }
 }
-
 @keyframes slide-back {
   from {
     left: 0%
