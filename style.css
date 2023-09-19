@@ -8,7 +8,7 @@
 /* Tags para Coloração do fundo branco */
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url(./assets/bg-desktop.jpg);
     --stroker-color: rgba(255, 255, 255, 0.5);
     --surface-color-hover:rgba(255, 255, 255, 0.5);
     --highlight-color:rgba(255, 255, 255, 0.2);
@@ -18,7 +18,7 @@
 /* Tags para coloração do fundo escuro */
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/bg-desktop-light.jpg);
    --stroker-color: rgba(0, 0, 0, 0.5);
    --surface-color: 1px solid rgba(0, 0, 0, 0.5);
     --surface-color-hover: rgba(0,0,0,0.5);
@@ -185,7 +185,7 @@ footer {
 }
 
 /* Ajustamento para diversas resoluções */
-@media (min-widht: 700px) {
+@media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
   }
