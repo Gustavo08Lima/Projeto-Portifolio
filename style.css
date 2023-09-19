@@ -18,7 +18,7 @@
 /* Tags para coloração do fundo escuro */
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/Papel-escuro.jpg);
    --stroker-color: rgba(0, 0, 0, 0.5);
    --surface-color: 1px solid rgba(0, 0, 0, 0.5);
     --surface-color-hover: rgba(0,0,0,0.5);
@@ -53,9 +53,8 @@ body * {
 
 /* Caixas de cada item*/
 #container {
-  max-width: 588px;
   width: 100%; 
-  width: 360px;
+  max-width: 408px;
   margin: 56px auto 0px;
   padding: 0 24px;
 
