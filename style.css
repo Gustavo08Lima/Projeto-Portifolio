@@ -8,7 +8,7 @@
 /* Tags para Coloração do fundo branco */
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-desktop.jpg);
+  --bg-url: url(./assets/bg-mobile.jpg);
     --stroker-color: rgba(255, 255, 255, 0.5);
     --surface-color-hover:rgba(255, 255, 255, 0.5);
     --highlight-color:rgba(255, 255, 255, 0.2);
@@ -18,7 +18,7 @@
 /* Tags para coloração do fundo escuro */
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-desktop-light.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
    --stroker-color: rgba(0, 0, 0, 0.5);
    --surface-color: 1px solid rgba(0, 0, 0, 0.5);
     --surface-color-hover: rgba(0,0,0,0.5);
