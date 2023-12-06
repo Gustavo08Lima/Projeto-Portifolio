@@ -18,7 +18,7 @@
 /* Tags para coloração do fundo escuro */
 .light {
   --text-color: black;
-  --bg-url: url(./assets/Papel-escuro.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
    --stroker-color: rgba(0, 0, 0, 0.5);
    --surface-color: 1px solid rgba(0, 0, 0, 0.5);
     --surface-color-hover: rgba(0,0,0,0.5);
